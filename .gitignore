@@ -1,0 +1,79 @@
+# ---------------------------------------------------------------
+# Secrets & credentials (the most important section for agent work)
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+service-account*.json
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------
+# Node / TypeScript
+# ---------------------------------------------------------------
+node_modules/
+.next/
+.turbo/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------------
+# Agent / LLM project artifacts
+# ---------------------------------------------------------------
+logs/
+*.log
+traces/
+.cache/
+chroma/
+.chroma/
+faiss_index/
+vectorstore/
+vector_db/
+*.sqlite
+*.sqlite3
+*.db
+*.gguf
+*.safetensors
+
+# Claude Code local (per-machine) settings
+.claude/settings.local.json
+
+# ---------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ---------------------------------------------------------------
+# Editors
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
